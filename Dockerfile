@@ -2,8 +2,6 @@ FROM fedora
 MAINTAINER Dávid Halász <skateman@skateman.eu>
 LABEL Description="Rubinius docker image" Version="2.5.8"
 
-RUN dnf -y update && dnf -y autoremove && dnf -y clean all
-
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV RBX_VERSION='2.5.8'
